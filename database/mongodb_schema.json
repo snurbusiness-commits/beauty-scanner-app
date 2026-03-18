@@ -1,0 +1,45 @@
+{
+  "users": {
+    "bsonType": "object",
+    "required": ["email", "username", "password"],
+    "properties": {
+      "_id": { "bsonType": "objectId" },
+      "email": { "bsonType": "string" },
+      "username": { "bsonType": "string" },
+      "password": { "bsonType": "string" },
+      "profile_picture": { "bsonType": ["string", "null"] },
+      "followers": { "bsonType": "array" },
+      "following": { "bsonType": "array" },
+      "posts": { "bsonType": "array" },
+      "created_at": { "bsonType": "date" }
+    }
+  },
+  "products": {
+    "bsonType": "object",
+    "required": ["name", "brand"],
+    "properties": {
+      "_id": { "bsonType": "objectId" },
+      "name": { "bsonType": "string" },
+      "brand": { "bsonType": "string" },
+      "description": { "bsonType": "string" },
+      "uses": { "bsonType": "string" },
+      "how_to_use": { "bsonType": "string" },
+      "image_url": { "bsonType": "string" },
+      "barcode": { "bsonType": "string" },
+      "prices": { "bsonType": "array" }
+    }
+  },
+  "posts": {
+    "bsonType": "object",
+    "required": ["user_id", "content"],
+    "properties": {
+      "_id": { "bsonType": "objectId" },
+      "user_id": { "bsonType": "objectId" },
+      "content": { "bsonType": "string" },
+      "media": { "bsonType": "array" },
+      "created_at": { "bsonType": "date" },
+      "likes": { "bsonType": "array" },
+      "comments": { "bsonType": "array" }
+    }
+  }
+}
