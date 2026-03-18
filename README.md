@@ -1,0 +1,1 @@
+# Beauty Scanner App\n\nWelcome to the Beauty Scanner App! This application is designed to help users discover beauty products tailored to their needs.\n\n## Features\n- Product scanning\n- Recommendations\n- User reviews\n\n## Getting Started\nTo get started, clone the repository and follow the installation instructions.
